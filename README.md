@@ -10,8 +10,6 @@ This repository contains a single Bun/TypeScript script (`migrate.ts`) that copi
 2. **API keys**
    - `FROM_VAPI_API_KEY` – source organization (typically development).
    - `TO_VAPI_API_KEY` – destination organization (typically production).
-   - Optional `VAPI_BASE_URL` if you point at a non-default API host.
-3. (Optional) `bun install` if you add more scripts or dependencies, but the current script relies only on the runtime.
 
 ---
 
