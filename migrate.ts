@@ -1,20 +1,3 @@
-#!/usr/bin/env bun
-/**
- * VAPI Resource Migration Script
- *
- * Migrates resources (assistants, tools, structured outputs) from one organization to another.
- *
- * Environment Variables:
- *   FROM_VAPI_API_KEY - API key for the source organization
- *   TO_VAPI_API_KEY   - API key for the destination organization
- *
- * Usage:
- *   bun run migrate.ts <assistant-id>
- *
- * Example:
- *   FROM_VAPI_API_KEY=xxx TO_VAPI_API_KEY=yyy bun run migrate.ts abc123
- */
-
 import { existsSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
