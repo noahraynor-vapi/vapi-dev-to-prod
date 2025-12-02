@@ -72,7 +72,7 @@ Every run records ID translations in a JSON file (default: `.migration-mapping.j
 ### Suggested Development → Production Workflow
 
 1. **Build/test in the development org** using the Vapi dashboard.
-2. **Run the migration script** with the development assistant ID and production API key.
+2. **Run the migration script** with the development assistant ID, development API key, and production API key.
 3. **Review in production** (tools page, assistant viewer) to confirm the new IDs and metadata appear.
 4. **Iterate:** whenever you change the assistant, its tools, or its structured outputs in development, rerun the script. Existing resources are patched; new ones are added.
 5. **Clean slate (if needed):** Delete the destination resources manually *before* migrating if you truly want fresh IDs, or delete the mapping file to force recreation.
